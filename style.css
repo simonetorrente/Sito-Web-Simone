@@ -1,0 +1,151 @@
+@font-face {
+ font-family: 'Montserrat';
+ src: url('montserrat-regular-webfont.woff') format('woff');
+ font-style: normal;
+ font-weight: 400;
+}
+
+@font-face {
+ font-family: 'Montserrat';
+ src: url('montserrat-medium-webfont.woff') format('woff');
+ font-style: medium;
+ font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Light-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-LightItalic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.page {
+  padding: 50px 10%;
+    }
+
+body {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: medium;
+}
+
+h5 {
+  font-size: 12px;
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+.header-background-video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.header-video {
+width: 100%;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.profile-image {
+  width: 25%;
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+}
+
+.profile-description {
+  margin: 20px 0px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px 15px 0px;
+}
+
+.facebook,
+.linkedin,
+.instagram {
+  display: inline;
+  align-items: center;
+  border-radius: 5px;
+  }
+
+.linkedin,
+.instagram {
+  margin-left: 15px;
+}
+
+.instagram {
+  margin-right: 25px;
+}
+
+.contact-button {
+  background-color: #0d47a1;
+  color: #ffffff;
+  font-family: 'Roboto' sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  border: 1px solid;
+  border-color: #ffffff;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+
+}
+
+.contact-button:hover {
+  background-color: #ffffff;
+  color: #0d47a1;
+  border: 31x solid;
+  border-color: #0d47a1;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 961px) {
+
+.site {
+  align-items: center;
+  justify-content: center;
+}
+
+
+    }
+}
