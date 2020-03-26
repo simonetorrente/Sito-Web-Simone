@@ -41,6 +41,10 @@
   box-sizing: border-box;
 }
 
+.site {
+  justify-content: center;
+}
+
 .page {
   padding: 50px 10%;
     }
@@ -77,13 +81,26 @@ width: 100%;
 .profile-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .profile-image {
-  width: 25%;
-  border-radius: 5px 5px 5px 5px;
-  overflow: hidden;
+  width: 33,3%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  overflow: visible;
+  min-width: 300px;
+}
+
+.avatar {
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-info {
+  padding-top: 0px;
 }
 
 .profile-description {
@@ -141,10 +158,11 @@ width: 100%;
 
 @media only screen and (min-width: 961px) {
 
-.site {
-  align-items: center;
-  justify-content: center;
+.profile-info {
+  padding-left: 0px;
+  padding-top: 0px;
 }
+
 
 
     }
