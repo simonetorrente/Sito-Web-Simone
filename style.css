@@ -41,13 +41,9 @@
   box-sizing: border-box;
 }
 
-.site {
-  justify-content: center;
+body, html {
+  box-sizing: border-box;
 }
-
-.page {
-  padding: 50px 5%;
-    }
 
 body {
   color: black;
@@ -65,6 +61,72 @@ h5 {
   font-size: 12px;
   font-family: 'Montserrat';
   font-weight: 300;
+}
+
+.site {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+a:link,
+a:visited {
+  color: #0d47a1;
+  text-decoration: none;
+}
+
+
+
+.page {
+  padding: 100px 5% 50px 5%;
+  box-sizing: border-box;
+    }
+
+.menu {
+  display: flex;
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  height: 70px;
+  padding: 50px 70px;
+  background-color: #FFFFFF;
+  position: fixed;
+}
+
+.logo-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.logo-container h2 {
+  display: inline;
+  font-size: 26px;
+}
+
+.link-menu {
+  display: none;
+}
+
+.logo,
+.chi-sono,
+.skills,
+.experiences,
+.contact {
+
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.logo,
+ {
+  display: flex;
+  padding-right: 25px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .header-background-video {
@@ -86,13 +148,13 @@ width: 100%;
 
 .profile-image {
   width: 33,3%;
-  clear: both;
   height: auto;
   display: flex;
   justify-content: center;
   overflow: visible;
   min-width: 300px;
   padding-bottom: 25px;
+  margin-right: 5%;
 }
 
 .avatar {
@@ -132,17 +194,16 @@ width: 100%;
   margin-right: 25px;
 }
 
-.contact-button {
+a.contact-button {
   background-color: #0d47a1;
   color: #ffffff;
   font-family: 'Roboto' sans-serif;
   font-weight: normal;
   font-size: 1em;
   border: 1px solid;
-  border-color: #ffffff;
   border-radius: 5px;
-  width: 200px;
-  height: 50px;
+  border-color: #ffffff;
+  padding: 15px 50px 15px 50px;
   cursor: pointer;
 
 }
@@ -150,7 +211,7 @@ width: 100%;
 .contact-button:hover {
   background-color: #ffffff;
   color: #0d47a1;
-  border: 31x solid;
+  border: 1px solid;
   border-color: #0d47a1;
   border-radius: 5px;
   width: 200px;
@@ -170,7 +231,33 @@ width: 100%;
   padding-top: 0px;
 }
 
+.menu {
 
+}
+
+.logo-container {
+  display: flex;
+  width: 50%;
+}
+
+.link-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 70%;
+  color: #0d47a1;
+}
+
+.logo,
+.chi-sono,
+.skills,
+.experiences,
+.contact {
+  display: flex;
+  padding-right: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
 
     }
 }
