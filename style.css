@@ -57,8 +57,18 @@ h1 {
   font-weight: medium;
 }
 
+h2 {
+  font-size: 32px;
+  color: #0d47a1;
+}
+
+h3 {
+  font-size: 16px;
+  color: #0d47a1;
+}
+
 h5 {
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Montserrat';
   font-weight: 300;
 }
@@ -66,6 +76,7 @@ h5 {
 .site {
   max-width: 100%;
   overflow: hidden;
+
 }
 
 a:link,
@@ -77,9 +88,16 @@ a:visited {
 
 
 .page {
-  padding: 100px 5% 50px 5%;
+  padding: 0px 8% 0px 8%;
   box-sizing: border-box;
-    }
+  align-items: center;
+}
+
+.background {
+  background-image: url("assets/images/background-1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 .menu {
   display: flex;
@@ -88,7 +106,7 @@ a:visited {
   box-sizing: border-box;
   align-items: center;
   height: 70px;
-  padding: 50px 70px;
+  padding: 40px 55px;
   background-color: #FFFFFF;
   position: fixed;
 }
@@ -97,32 +115,33 @@ a:visited {
   display: flex;
   width: 50%;
   align-items: center;
+
 }
 
 .logo-container h2 {
-  display: inline;
   font-size: 26px;
+  font-weight: 300;
+}
+
+.nome-logo {
+  display: none;
 }
 
 .link-menu {
   display: none;
 }
 
-.logo,
-.chi-sono,
-.skills,
-.experiences,
-.contact {
-
-}
 
 .logo {
-  width: 100px;
+  width: 80px;
   height: auto;
 }
 
 .logo,
- {
+.chi-sono-menu,
+.skills-menu,
+.experiences-menu,
+.contact-menu {
   display: flex;
   padding-right: 25px;
   font-size: 20px;
@@ -143,18 +162,17 @@ width: 100%;
 .profile-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  padding: 110px 25px 100px 25px;
+  justify-content: left;
 }
 
 .profile-image {
-  width: 33,3%;
+  width: 300px;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   overflow: visible;
-  min-width: 300px;
-  padding-bottom: 25px;
-  margin-right: 5%;
+  padding: 0px;
 }
 
 .avatar {
@@ -164,16 +182,191 @@ width: 100%;
 }
 
 .profile-info h1 {
-  text-align: center;
+  text-align: left;
+  font-size: 28px;
+}
+
+.profile-info a {
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #00b5ff;
+}
+
+.profile-info a:hover {
+  color: #00b5ff;
+  text-decoration-color: #0049bb;
+}
+
+.profile-info {
+  padding-top: 25px;
+}
+
+.nome-profilo {
+  background: linear-gradient(to right, #0049bb 0%, #00b5ff 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 .profile-description {
-  margin: 20px 0px;
+  padding: 20px 0px 30px 0px;
+}
+
+.skills-section {
+  padding: 25px 0px;
+  justify-content: center;
+  display: block;
+}
+
+.skills-section h2 {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px 0px;
+}
+
+.skills h3{
+  margin: 15px 0px;
+  color: #0d47a1
+}
+
+.images-skills img {
+  width: 100px;
+  justify-content: center;
+}
+
+.project-management,
+.startup,
+.web-development,
+.web-design {
+  width: 280px;
+  justify-content: center;
+  padding: 25px 35px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #eee;
+
+}
+
+.project-management:hover,
+.startup:hover,
+.web-development:hover,
+.web-design:hover {
+  box-shadow: 10px 10px 30px #ddd;
+  transition: 0.3s;
+}
+
+.pm-st,
+.wd-de {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.experiences-section {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.experiences-section a {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  text-decoration: underline;
+}
+
+.experiences-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 25px 0px;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+}
+
+.experiences-container h3 {
+  padding: 15px 0px;
+}
+
+.experiences-container img {
+  width: 100%;
+  align-items: center;
+  display: block;
+}
+
+.container-images-experiences {
+  height:90px;
+  align-items: center;
+}
+
+.unito,
+.sei,
+.starplan,
+.bioxparc {
+  width: 280px;
+  justify-content: center;
+  padding: 25px 35px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #eee;
+}
+
+.unito:hover,
+.sei:hover,
+.starplan:hover,
+.bioxparc:hover {
+  box-shadow: 10px 10px 30px #ddd;
+  transition: 0.3s;
+}
+
+.un-se,
+.st-bi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contatti-section {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.contatti-section h2 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.contatti {
+  padding: 50px 25px;
+  font-size: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #eee;
+  display: block;
+}
+
+.email {
+  justify-content: center;
 }
 
 .social {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 15px 0px 15px 0px;
 }
 
@@ -185,6 +378,15 @@ width: 100%;
   border-radius: 5px;
   }
 
+  .facebook:hover,
+  .linkedin:hover,
+  .instagram:hover {
+    display: inline;
+    align-items: center;
+    border-radius: 5px;
+    transform: rotate(10deg);
+    }
+
 .linkedin,
 .instagram {
   margin-left: 17px;
@@ -194,13 +396,14 @@ width: 100%;
   margin-right: 25px;
 }
 
+
+
 a.contact-button {
-  background-color: #0d47a1;
+  background: linear-gradient(90deg, rgba(0,73,187,1) 0%, rgba(0,181,255,1) 100%);
   color: #ffffff;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 1em;
-  border: 1px solid;
   border-radius: 5px;
   border-color: #ffffff;
   padding: 15px 50px 15px 50px;
@@ -209,17 +412,16 @@ a.contact-button {
 }
 
 .contact-button:hover {
-  background-color: #ffffff;
-  color: #0d47a1;
-  border: 1px solid;
-  border-color: #0d47a1;
-  border-radius: 5px;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(0,73,187,1) 100%);
+  color: #fff;
 }
 
+
 @media only screen and (min-width: 961px) {
+.profile-container {
+  justify-content: center;
+  padding-top: 150px;
+}
 
 .profile-image {
   clear: none;
@@ -229,10 +431,11 @@ a.contact-button {
 .profile-info {
   padding-left: 0px;
   padding-top: 0px;
+  width: 50%;
 }
 
-.menu {
-
+.profile-info h1 {
+  font-size: 42px;
 }
 
 .logo-container {
@@ -243,20 +446,32 @@ a.contact-button {
 .link-menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   width: 70%;
   color: #0d47a1;
 }
 
-.logo,
-.chi-sono,
-.skills,
-.experiences,
-.contact {
-  display: flex;
-  padding-right: 25px;
-  font-size: 20px;
-  font-weight: 500;
+.menu {
+  justify-content: space-between;
+}
+
+.nome-logo {
+  display: inline;
+}
+
+.skills-section {
+  padding: 80px 0px;
+}
+
+.experiences-section {
+  padding-bottom: 80px;
+}
+
+.contatti-section h2 {
+  padding-bottom: 30px;
+}
+
+.contatti {
+  font-size: 26px
 }
 
     }
