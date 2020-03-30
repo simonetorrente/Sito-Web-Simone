@@ -85,7 +85,10 @@ a:visited {
   text-decoration: none;
 }
 
-
+.link-menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: #00b5ff;
+}
 
 .page {
   padding: 0px 8% 0px 8%;
